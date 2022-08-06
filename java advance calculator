@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class advanced_calculator {
+     public static void main(String args[]) {
+        //input
+         Scanner first = new Scanner(System.in);
+         double options, fnum, snum , addition , multiply , divide , remainder , subtraction;
+         System.out.println("enter the option u want to choose  " +
+                 "press 1 for addition \n"+ "press 2 for subtraction \n" + "press 3 for multiplication \n" + "press 4 for divide\n" + "press 5 for remainder \n" );
+
+         options=first.nextDouble();
+
+         System.out.println("enter the first number");
+         fnum=first.nextDouble();
+         System.out.println("enter the second number");
+         snum=first.nextDouble();
+
+         //operators
+         addition=snum+fnum;
+         subtraction=fnum-snum;
+         multiply=fnum*snum;
+         divide=fnum/snum;
+         remainder =fnum%snum;
+
+         //option functions
+         if (options==1) {
+             System.out.println("the addition is " + addition);
+         }
+         if (options==2){
+             System.out.println("subtraction is " + subtraction);
+         }
+         if (options==3){
+             System.out.println("multiplication of both the digits are "+ multiply);
+         }
+         if (options==4){
+             System.out.println("divident of both the digits are "+ divide);
+         }
+        if (options==5){
+            System.out.println("remainder of both the digits are "+ remainder);
+
+        }
+        else {
+            System.out.println("please enter the number for respective option");
+        }
+     }
+}
